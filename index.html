@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de cadastro</title>
 </head>
 <body>
+    <!--funciona via protocolo https-->
+    <!--o atributo action eh para onde vai o formulario-->
+    <!--o atributo method tem 2 valores: get e post-->
+    <!--o valor post do atributo method, manda via body uma requisicao das informaçoes para o servidor-->
+    <!--o atributo autocomplete, grava as infos-->
+    <!--o atributo onsubmit, cria eventos durante a submissao do formulario-->
+    <form name="signup" method="post" action="#" target="_blank" autocomplete="on" onsubmit="alert('Formulario enviado :x')">
+        Nome: <input type="text" name="name">
+        Idade: <input type="number" name="age">
+        Email: <input type="text" name="email">
+        Senha: <input type="password" name="password">
+        <button type="submit">
+            Enviar
+        </button>
+    </form>
     
 </body>
 </html>
